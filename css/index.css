@@ -1,0 +1,20 @@
+  body, input {
+    font-family: "Temperature Display";
+    font-size: 20px;
+    background: cornflowerblue;
+  }
+
+  input{
+    background-color: aliceblue;
+  }
+
+  @font-face {
+    font-family: "Temperature Display";
+    src: url("fonts/Tiny5.ttf") format("truetype");
+  }
+
+  .temperature {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+  }
