@@ -1,11 +1,21 @@
-  body, input {
+  body {
     font-family: "Temperature Display";
     font-size: 20px;
     background: cornflowerblue;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /*vertical*/
+    align-items: center; /*horizontal*/
+
   }
 
   input{
     background-color: aliceblue;
+    font-family: "Temperature Display";
+    font-size: 20px;
+
   }
 
   @font-face {
@@ -17,4 +27,5 @@
     display: flex;
     gap: 24px;
     align-items: center;
+    transform: translateX(-15px);
   }
