@@ -10,13 +10,16 @@
 </head>
 <body>
     <h1>Temperature Converter Calculator</h1>
-    <!-- 1. Detect which box user has typed in -->
-    <!-- 2. If the user typed in one box, the other box will provide an immediate converted value -->
-    <!-- User is able to have the inputs switch sides -->
-
     <div class="temperature">
-        <label for="Celsius">Celsius: <input type="text" id="cDegree" name="celsius"></label>
-        <label for="Fahrenheit">Fahrenheit: <input type="text" id="fDegree" name="fahrenheit"></label>
+         <label for="left-input" class="field">
+            <span id="left-label">Celsius: </span>
+            <input type="text" id="left-input" name="celsius" inputmode="decimal">
+        </label>
+        <button id="convert-to-arrow" type="button" aria-label="switch sides"><img src="../imgs/doubleArrow.png" alt="switch sides"></button>
+        <label for="right-input" class="field">
+            <span id="right-label">Fahrenheit: </span>
+            <input type="text" id="right-input" name="fahrenheit" inputmode="decimal">
+        </label>
     </div>
 </body>
 </html>

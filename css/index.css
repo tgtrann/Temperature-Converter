@@ -15,8 +15,8 @@
     background-color: aliceblue;
     font-family: "Temperature Display";
     font-size: 20px;
-
   }
+
 
   @font-face {
     font-family: "Temperature Display";
@@ -28,4 +28,25 @@
     gap: 24px;
     align-items: center;
     transform: translateX(-15px);
+  }
+
+   .field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+
+  #convert-to-arrow {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    display: inline-flex;
+  }
+
+  #convert-to-arrow img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
   }
