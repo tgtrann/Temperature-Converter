@@ -1,52 +1,76 @@
-  body {
-    font-family: "Temperature Display";
-    font-size: 20px;
-    background: cornflowerblue;
-    min-height: 100vh;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /*vertical*/
-    align-items: center; /*horizontal*/
+/**PAGE CONTENT**/
+/**affects the entire page*/
+body
+{
+  font-family: "Temperature Display"; /*sets the page's default font*/
+  font-size: 20px; /*sets the page's default text size*/
+  background: cornflowerblue; /*sets the page background color*/
+  min-height: 100vh; /*makes the body fill at least the full viewport height*/
+  margin: 0; /*removes the browser's default body margin*/
+  display: flex; /*enables flexbox so the content can be centered*/
+  flex-direction: column; /*stacks flex children top to bottom*/
+  justify-content: center; /*vertical*/
+  align-items: center; /*horizontal*/
 
-  }
+}
 
-  input{
-    background-color: aliceblue;
-    font-family: "Temperature Display";
-    font-size: 20px;
-  }
+/**adjust the fonts on the page*/
+@font-face
+{
+  font-family: "Temperature Display"; /*names the custom font for use elsewhere*/
+  src: url("fonts/Tiny5.ttf") format("truetype"); /*points to the font file to load*/
+}
+
+/**adjust the title of the page*/
+h1
+{
+  margin: 0px 0px 18px 0px; /*adds space below the title only*/
+}
 
 
-  @font-face {
-    font-family: "Temperature Display";
-    src: url("fonts/Tiny5.ttf") format("truetype");
-  }
+/**STYLING OF INPUT BOXES & LABELS**/
+/**styling and adjustment of the div container */
+.temperature {
+  display: flex; /*lines up the labels and arrow button in a row*/
+  gap: 24px; /*adds spacing between the labels and arrow button*/
+  align-items: center; /*vertically centers the labels and arrow button*/
+  transform: translateX(-15px); /*nudges the whole row left to visually re-center it*/
+}
 
-  .temperature {
-    display: flex;
-    gap: 24px;
-    align-items: center;
-    transform: translateX(-15px);
-  }
+/**adjust the input boxes*/
+input
+{
+  background-color: aliceblue; /*sets the input box background color*/
+  font-family: "Temperature Display"; /*applies the custom font to input text*/
+  font-size: 20px; /*sets the input text size*/
+}
 
-   .field {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 4px;
-  }
+/**adjust the position of the input boxes and labels together*/
+.field
+{
+  display: flex; /*lines up the label text and its input*/
+  flex-direction: column; /*stacks the label above the input*/
+  align-items: center; /*horizontally centers the label and input*/
+  gap: 4px; /*adds spacing between the label and input*/
+}
 
-  #convert-to-arrow {
-    border: none;
-    background: none;
-    padding: 0;
-    cursor: pointer;
-    display: inline-flex;
-  }
+/**FEATURES**/
+/**styling for clickable arrows**/
+#convert-to-arrow
+{
+  border: none; /*removes the default button border*/
+  background: none; /*removes the default button background*/
+  padding: 0; /*removes the default button padding*/
+  cursor: pointer; /*shows a pointer cursor to indicate it's clickable*/
+  display: inline-flex; /*lets the button size itself to its image content*/
+  width: 32px; /*sets the button's width*/
+  height: 32px; /*sets the button's height*/
+  object-fit: contain; /*keeps the arrow image's proportions within the button size*/
+}
 
-  #convert-to-arrow img {
-    width: 32px;
-    height: 32px;
-    object-fit: contain;
-  }
+/**adjusts the sprites size**/
+#HotColdAnimation
+{
+  width: 150px; /*sets the displayed width of the sprite canvas*/
+  height: 200px; /*sets the displayed height of the sprite canvas*/
+}
