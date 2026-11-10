@@ -11,14 +11,14 @@ Allow the user to switch the temperature boxes to the other side. Though, they a
 A small animation will play depending on what temperature is typed in. 
 
 ## Tools used
-Microsoft Visual Studio Code
-Adobe Photoshop
+Microsoft Visual Studio Code  
+Adobe Photoshop  
 Claude (Assisted in debugging, sprite work and clarifying logic)
 
 ## What I learned/Improved on
-DOM/event fundamentals
-Canvas/animation mechanics
-Debugging
+DOM/event fundamentals  
+Canvas/animation mechanics  
+Debugging  
 
 
 
